@@ -1,4 +1,4 @@
-# electron-jump-start
+# Electron vue tailwindcss starter
 
 **A scafold package to start electron with vue and tailwindcss.**
 
