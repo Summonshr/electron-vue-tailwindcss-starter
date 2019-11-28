@@ -1,0 +1,506 @@
+img {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+div.temporary {
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: rgb(0, 182, 0);
+  color: white;
+  border-radius: 9999px;
+}
+
+div.display {
+  opacity: 1;
+}
+
+body {
+  position: relative;
+}
+
+.fadeOut {
+  opacity: 0 !important;
+}
+
+.bg-green-100 {
+  background: rgb(219, 255, 219);
+}
+
+.text-green-700 {
+  color: rgb(0, 48, 0);
+}
+
+span.comma::after {
+  content: ", ";
+}
+
+span.comma:last-child::after {
+  content: "" !important;
+}
+
+.right {
+  float: right;
+}
+
+.copy {
+  background: #aaaaff;
+  width: 20px;
+  text-align: center;
+  padding: 0px;
+  border-radius: 9999px;
+  height: 20px;
+  float: right;
+  color: #00f;
+  cursor: pointer;
+}
+
+.bg-green th {
+  background: #053a00 !important;
+  color: rgb(218, 255, 221);
+}
+
+.total-users {
+  float: right;
+  cursor: pointer;
+  color: rgb(44, 44, 44);
+  font-size: 14px;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+
+.opened {
+  width: 250px;
+  margin-right: 0;
+}
+
+.closed {
+  width: 250px;
+  margin-right: -250px
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.transition {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.r-0 {
+  right: 0;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.work-in-progress {
+  margin: 0 auto;
+  text-align: center;
+  height: 600px;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work-in-progress span {
+  padding: 0 15px;
+  margin: 1px;
+  -webkit-box-shadow: 1px 1px 1px rgb(156, 156, 156);
+  box-shadow: 1px 1px 1px rgb(156, 156, 156);
+  font-size: 55px;
+  background: rgb(248, 247, 247);
+  text-shadow: 0.5px 1px 1px #f54a4a;
+}
+
+
+@-webkit-keyframes greenones {
+  from {
+    background: green;
+    border-radius: 9999px;
+    color: white;
+  }
+  to {
+    border-radius: 9999px;
+    background: transparent;
+    color: black;
+  }
+}
+
+@keyframes greenones {
+  from {
+    background: green;
+    border-radius: 9999px;
+    color: white;
+  }
+  to {
+    border-radius: 9999px;
+    background: transparent;
+    color: black;
+  }
+}
+
+@-webkit-keyframes redones {
+  from {
+    background: red;
+    border-radius: 9999px;
+    color: white;
+  }
+  to {
+    border-radius: 9999px;
+    background: transparent;
+    color: black;
+  }
+}
+
+@keyframes redones {
+  from {
+    background: red;
+    border-radius: 9999px;
+    color: white;
+  }
+  to {
+    border-radius: 9999px;
+    background: transparent;
+    color: black;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.comma.no-color:last-child {
+  animation: none;
+  -webkit-animation: none;
+}
+
+tbody tr, .fadeIn {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.failed-sols {
+  color: rgb(255, 255, 255);
+  background: rgb(182, 0, 0);
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgb(182, 0, 0);
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(182, 0, 0);
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+td.finishing {
+  font-weight: 600;
+  -webkit-animation: flickerAnimation 1.5s infinite;
+  animation: flickerAnimation 1.5s infinite;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px white;
+}
+
+.error {
+  text-align: 'center';
+  background: '#ffc6c6';
+  color: '#ff0000';
+}
+
+.seats {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat( auto-fit, minmax(28px, 1fr) );
+  grid-gap: 1px;
+}
+
+.seat {
+  display: flex;
+  position: relative;
+}
+
+.seat input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+
+.seat input[type=checkbox]:checked+label {
+  background: #bada55;
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  animation-duration: 300ms;
+  animation-fill-mode: both;
+}
+
+.seat input[type=checkbox]:disabled+label {
+  background: #dddddd;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.seat input[type=checkbox]:disabled+label:after {
+  content: "X";
+  text-indent: 0;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.seat input[type=checkbox]:disabled+label:hover {
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.seat label {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 23px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.2rem;
+  padding: 3px 5px;
+  background: #f42536;
+  border-radius: 3px;
+}
+
+.seat label:before {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 85%;
+  top: 1px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
+}
+
+.seat label:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0px 2px #5C6AFF;
+}
+
+.not-started label {
+  background: rgb(204, 200, 200);
+}
+
+.running label {
+  background: #FFA500;
+  color: black;
+}
+
+.failed label {
+  background: #dc3545;
+  color: white;
+}
+
+.finished label {
+  background: #28a745;
+  color: #fff;
+}
+
+.sol-container {
+  box-shadow: 1px 1px 3px rgb(158, 158, 158);
+  padding: 5px 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.legend {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  justify-content: flex-start;
+}
+
+.legend .seat {
+  margin-right: 15px;
+}
+
+.legend label {
+  margin-right: 2px;
+}
+
+.corrupted label {
+  background: #000000;
+  color: white;
+}
+
+.verify {
+  background: aquamarine;
+  padding: 1px 5px;
+  border-radius: 6px;
+  color: #29624f;
+}
+
+.w-fifth {
+  width: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 15% 15% 30% 20% 20%;
+  overflow: hidden;
+}
+
+.grid div {
+  padding: 7px;
+  border-bottom: 1px solid rgb(133, 169, 141)
+}
+
+.absoluter {
+  position: absolute;
+  background: red;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+
+.seat label {
+  transition: all 0.5s ease-in-out;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 1px #adadad;
+}
+
+.grid.relative {
+  font-size: 14px;
+}
+
+.text-big {
+  font-size: 2rem;
+  color: rgb(3, 114, 17);
+}
+
+
+[v-cloak] {
+  display: block;
+  padding: 50px 0;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+[v-cloak]:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #333;
+  animation: spinner 0.6s linear infinite;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+[v-cloak]>* {
+  display: none;
+}
+
+[v-cloak]::before { content: "loading…" }
+
+.img-movement {
+  display: inline;
+}
